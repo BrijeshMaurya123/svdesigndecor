@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>SV Design & Decor Studio</title>
+
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Stylesheets -->
+    <link href="assets/css/font-awesome-all.css" rel="stylesheet">
+    <link href="assets/css/icomoon.css" rel="stylesheet">
+    <link href="assets/css/owl.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/color.css" rel="stylesheet">
+    <link href="assets/css/global.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/banner/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+</head>
+
+
+<!-- page wrapper -->
+
+<body>
+
+
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content ">
+                <div class="modal-header  ">
+                    <h5 class="modal-title text-center " id="contactModalLabel">
+
+                        <img src="assets/images/banner/logo.png" alt="" width="60px">
+                    </h5>
+                    <button type="button" class="close colse" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="enquiry.php" method="post" enctype="multipart/form-data" id="contactForm">
+
+
+
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name"
+                                required>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="phone" name="phone"
+                                placeholder="Enter Your number" required>
+                        </div>
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter Your Email" required>
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="nameInput" name="MESH" readonly>
+                        </div>
+
+                        <div class="form-group">
+
+                            <textarea class="form-control" id="message" name="message" rows="3"
+                                placeholder="Enter Your Message" required></textarea>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <label for="captcha"><b>CAPTCHA:</b></label>
+                                        <button type="button"  id="refreshCaptcha">Refresh <i class="fa-solid fa-rotate"></i></button>
+                                        <canvas id="captchaCanvas" width="100" height="40"></canvas>
+                                    </div>
+                                   
+                                    <div class="col-lg-4" >
+                                        <input type="text" id="captcha" class="form-control" name="captcha" required>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                          
+                            
+                           
+                           
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Send Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="boxed_wrapper">
+
+
+
+
+
+        <!-- main header -->
+        <header class="main-header style-two">
+            <!-- header-top -->
+            <div class="header-top">
+                <div class="auto-container">
+                    <div class="top-inner clearfix">
+                        <ul class="info clearfix pull-left">
+                            <!-- <li><a href="about.html">About</a></li> -->
+                            <li><i class="fas fa-map-marker-alt"></i></li>
+                            <li>558 Ghitorni silver oak lane New Delhi 110030</li>
+                            <li><i class="fas fa-phone-volume"></i></li>
+                           <li><a href="tel:+918178720842"> +91 8178720842</a></li>
+
+                            <!-- <li><a href="contact.html">Contact Us</a></li> -->
+                        </ul>
+                        <ul class="header-social clearfix pull-right">
+                            <!-- <li>Connect Socially</li> -->
+                            <li><a href="https://www.facebook.com/share/KQd5VMQxR9rfGtko/?mibextid=qi2Omg"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/sv_design_s_decore_studio?igsh=MTEwcjBhY3FhY3c4OQ=="><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://wa.me/8178720842"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-lower">
+                <div class="container-fluid">
+
+                    <div class="lower-inner">
+                        <div class="outer-box clearfix">
+                            <div class="container">
+                                <div class="menu-area">
+
+                                    <!--Mobile Navigation Toggler-->
+                                    <div class="mobile-nav-toggler">
+                                        <i class="icon-bar"></i>
+                                        <i class="icon-bar"></i>
+                                        <i class="icon-bar"></i>
+                                    </div>
+                                    <div class="pull-left logo-main d-flex">
+                                        <a href="index.html"> <img src="assets/images/banner/logo.png" alt="" width="60px" class="pb-3"></a>
+                                   <a href="index.html"> <h2 class="headsv">SV DESIGN & DECOR STUDIO</h2></a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <nav class="main-menu navbar-expand-md">
+                                            <div class="collapse navbar-collapse show clearfix"
+                                                id="navbarSupportedContent">
+                                                <ul class="navigation clearfix">
+                                                    <li class="current"><a href="index.html">Home</a></li>
+                                                    <li><a href="about.html">About Us</a></li>
+                                                     <li class="dropdown"><a href="mosquito.html">Our Products</a>
+                                                        <ul>
+                                                           <li class="dropdown"><a href="mosquito.html">Insect
+                                                                    Mesh</a>
+                                                                    <ul>
+                                                                         
+                                                                        <li><a href="pleated.html">Pleated Insect Mesh</a></li>
+                                                                        <li><a href="aluminum.html">Aluminum Pleated Insect Mesh</a>
+                                                                        </li>
+                                                                         <li><a href="pleated26.html">PLEATED MESH</a></li>
+                                                                <li><a href="ssmesh.html">SS Mesh Rolls 304</a></li>
+                                                                <li><a href="fibermesh.html">Fiber Mesh Rolls</a></li>
+                                                                        <li><a href="classic.html">PLEATED CLASSIC Mesh</a></li>
+                                                                        <li><a href="roller.html">ROLLER MESH</a></li>
+                                                                        <li><a href="magic.html">Magic Mesh Curtain</a></li>
+                                                                         
+                                                                        <li><a href="velcro.html">VELCRO MESH</a></li>
+                                                                        <li><a href="zip.html">ZIPLine motorized Mesh</a></li>
+                                                                        <li><a href="barrier.html">Barrier Free Mesh Door</a></li>
+                                                                        <li><a href="elite.html">PLEATED ELITE (Detachable Series)</a></li>
+                                                                    </ul>
+                                                            </li>
+                                                            <li class="dropdown"><a href="window.html">Window Blinds</a>
+                                                                <ul>
+                                                                    <li><a href="dgu.html">DGU Blinds</a></li>
+                                                                    <li><a href="roman.html">Skylight Roman blinds</a></li>
+                                                                    <li><a href="blind.html">Skylight Blinds</a></li>
+                                                                    <li><a href="exterior.html">Skylight Exterior Blinds</a></li>
+                                                                    <li><a href="motorized.html">ZIPLine motorized Blind</a></li>
+                                                                    <li><a href="zipline.html">Infinity Zipline</a></li>
+                                                                </ul>
+                                                            </li>
+                                                              <li class="dropdown"><a href="upvc.html">uPVC Door & Windows</a>
+                                                                  <ul>
+                                                                    <li><a href="casement.html">CASEMENT DOOR</a></li>
+                                                                    <li><a href="slide.html">SLIDE & FOLD</a></li>
+                                                                    <li><a href="french.html">FRENCH WINDOW</a></li>
+                                                                    <li><a href="2track.html">2 TRACK 2 PANEL SLIDER</a></li>
+                                                                    <li><a href="3track.html">3 TRACK 3 PANEL SLIDER</a></li>
+                                                                    <li><a href="cornoer.html">CORNER SLIDER</a></li>
+                                                                    <li><a href="low.html">LOW THRESHOLD SLIDER</a></li>
+                                                                    <li><a href="hung.html">TOP HUNG </a></li>
+                                                                    <li><a href="fix.html">FIX GLASS </a></li>
+                                                                    <li><a href="tilt.html">TILT & TURN</a></li>
+                                                                    <li><a href="pivot.html">CENTER PIVOT WINDOW</a></li>
+                                                                    <li><a href="lower.html">UPVC VENTILATION LOWERS</a></li>
+                                                                    
+                                                                  </ul>
+                                                            </li>
+                                                            <li class="dropdown"><a href="partition.html">Partition Door</a>
+                                                                <ul>
+                                                                    <li><a href="pvc.html">PVC ACCORDIAN DOOR</a></li>
+                                                                    <li><a href="honey.html">Honeycomb Partition Door</a></li>
+                                                                </ul>
+                                                            </li>
+                                                             
+                                                        </ul>
+                                                    </li>
+
+                                                    <li><a href="contact.html">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="outer-box clearfix">
+                        <div class="pull-left">
+                            <div class="nav-logo d-flex">
+                                <a href="index.html"> <img src="assets/images/banner/logo.png" alt="" width="60px" class="pb-3"></a>
+                                   <a href="index.html"> <h2 class="headsv">SV DESIGN & DECOR STUDIO</h2></a>
+                          
+                        </div>
+                        </div>
+                        <div class="menu-area pull-right">
+                            <nav class="main-menu clearfix">
+                                <!--Keep This Empty / Menu will come through Javascript-->
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main-header end -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html">
+                        <img src="assets/images/banner/logo.png" alt="" width="120px">
+                    </a>
+                </div>
+                <div class="menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+
+        <!--Page Title-->
+        <section class="page-title" style="background-image: url(assets/images/background/windon.webp);">
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="title">
+                        <h1>ZIPLINE MOTORIZED BLINDS</h1>
+                    </div>
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="shape"></li>
+                        <li>ZIPLINE MOTORIZED BLINDS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--End Page Title-->
+
+        <!-- contact-style-two -->
+        <section class="mosquito">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 mt-5  door">
+                        <div class="row">
+                            <div class="col-lg-4 pb-3">
+                                <img src="assets/images/window/5.webp" alt="">
+                            </div>
+                            <div class="col-lg-8 mt-2 ">
+                                <h3><a href="motorized.html">ZIPLINE MOTORIZED BLINDS</a></h3>
+
+                                <h4 class="mt-5">Product Details:</h4>
+                                <div class="row">
+                                    <div class="col-lg-12 mt-4">
+
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th>Use:</th>
+                                                <td>Home Office Hotel</td>
+                                                <th>Feature:</th>
+                                                <td>Waterproof Eco Friendlyl</td>
+                                                
+                                            </tr>
+                                            
+                                            <tr>
+                                                
+                                                <th>Color:</th>
+                                                <td> Gray & Silver</td>
+                                                <th>Pattern:</th>
+                                                <td> Horizontal </td>
+                                               
+                                            </tr>
+                                           
+                                        </table>
+                                      
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h6>
+                                            <a href="#view">Click to View More</a>
+                                        </h6>
+
+                                        <p>Share Your Product <span >
+                                            <a href="https://www.facebook.com/share/KQd5VMQxR9rfGtko/?mibextid=qi2Omg"><i class="fab fa-facebook-f fa-2xl text-info mx-2"></i></a>
+                                            <a href="https://www.instagram.com/sv_design_s_decore_studio?igsh=MTEwcjBhY3FhY3c4OQ=="><i class="fab fa-instagram fa-2xl text-info mx-2"></i></a>
+                                            <a href="https://wa.me/8178720842"><i class="fab fa-whatsapp fa-2xl text-info mx-2"></i></a>
+                                            <a href="#"><i class="fab fa-twitter fa-2xl text-info mx-2"></i></a>
+                                            </span></p>
+
+                                            
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <button class="send" id="openFormBtn" onclick="wind5()" type="button" class="btn btn-primary"
+                                        data-toggle="modal" data-target="#contactModal">Send Enquiry
+                                    </button>
+                                    </div>
+
+
+                                 
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 py-5 ">
+                       <div class="row">
+                        <div class="col-lg-8">
+                           <h3>
+                            ZIPLINE MOTORIZED BLINDS Price And Quantity
+                           </h3>
+                            <table class="table table-bordered my-5">
+                                <tr>
+                                    <th>Minimum Order Quantity</th>
+                                    <td>100 Square Feet</td>
+                                </tr>
+                                <tr>
+                                    <th>Price</th>
+                                    <td> 1000.00 - 2000.00 INR/Square Feet</td>
+                                </tr>
+    
+    
+                            </table>
+                        </div>
+
+                        <div class="col-lg-12">
+                         <h3>ZIPLINE MOTORIZED BLINDS Product Specifications</h3>
+                           <div class="table-responsive">
+                            <table class="table table-bordered my-5">
+                                <tr>
+
+                                   <th>Pattern</th>
+                                   <td>Horizontal </td>
+                                   <th>Color</th>
+                                    <td> Gray & Silver</td>
+                                </tr>
+                                <tr>
+                                   
+                                    <th>Use</th>
+                                    <td>Home Office Hotel</td>
+                                    <th>Feature:</th>
+                                     <td>Waterproof Eco Friendlyl</td>
+                                </tr>
+                              
+    
+                            </table>
+                           </div>
+                        </div>
+
+                        <div class="col-lg-12" id="view">
+                            <h3>
+                                ZIPLINE MOTORIZED BLINDS Trade Information
+                            </h3>
+                           <div class="table-responsive">
+                            <table class="table table-bordered my-5">
+                                <tr>
+                                  
+                                   <th>Supply Ability</th>
+                                   <td>  10000 Square Feet Per Month</td>
+                                   <th>Delivery Time</th>
+                                   <td> 7 Days</td>
+                                </tr>
+                              
+    
+                            </table>
+                           </div>
+                        </div>
+                       </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 py-5 ">
+                       
+                        <h3 >Product Description</h3>
+                        <p class="my-3">Presenting the ideal complement to any residence, business, or lodging establishment: the Zipline Motorized Blind. This blind is a fantastic option for any setting because it is composed of high-quality materials, is waterproof, and is environmentally friendly. Its chic gray and silver color combination is paired with a modern horizontal design. Installing and using the Zipline Motorized Blind is a simple process. You can perfectly adjust the height and angle of the blinds with the remote control that comes with it. The blinds can be manually operated or programmed to open and close at predetermined intervals. You won't have to be concerned about the motorized blinds running out of power because they are powered by a rechargeable battery. You can use the Zipline Motorized Blind in every room in your house.</p>
+                       
+                          
+                     </div>
+
+                     <div class="col-lg-12 col-md-12 col-sm-12 py-5 ">
+                       
+                      
+                        <h5>
+                            FAQs of ZIPLINE MOTORIZED BLINDS:
+                        </h5>
+                        <div class="my-3">
+                            <h3 ><b>FAQ</b></h3>
+                           <div class="my-3">
+                            <h5><b>Q: 1 What materials are the Zipline Motorized Blinds made of?</b></h5>
+                            <p> <b>A:</b> The Zipline Motorized Blinds are made of high-quality materials and are waterproof and eco-friendly.</p>
+                           </div>
+
+                           <div class="my-3">
+                            <h5><b>Q: 2 How do I install the Zipline Motorized Blinds?</b></h5>
+                            <p> <b>A:</b> The Zipline Motorized Blinds come with a remote control and are easy to install.</p>
+                           </div>
+
+                           <div class="my-3">
+                            <h5><b>Q: 3  Can I program the Zipline Motorized Blinds to open and close at specific times?</b></h5>
+                            <p> <b>A:</b> Yes, you can program the blinds to open and close at specific times, or control them manually.</p>
+                           </div>
+
+                           <div class="my-3">
+                            <h5><b>Q: 4 How are the Zipline Motorized Blinds powered?</b></h5>
+                            <p> <b>A:</b> Yes, Skylight Exterior Blinds are easy to install and maintain, making them a great choice for any space.</p>
+                           </div>
+
+                           <div class="my-3">
+                            <h5><b>Q: 5 Who manufactures Skylight Exterior Blinds?</b></h5>
+                            <p> <b>A:</b> The Zipline Motorized Blinds are powered by a rechargeable battery.</p>
+                           </div>
+
+                        </div>
+                       
+                         
+                     </div>
+
+
+                     <div class="container text-center">
+                        <h2 class="my-5">
+                            Window Blinds Category
+                        </h2>
+                        <div class="row">
+                            <div class="col-lg-3 my-5">
+                                <div class="card">
+                                  <a href="blind.html"><img src="assets/images/window/3.webp" alt=""></a>
+                                  <p><b>Skylight Blinds</b></p>
+                                  <div class="card-body text-left">
+                                    <p>Price: <span>800-12500 INR/Square Feet</span></p>
+                                      <p>Minimum Order Quantity : 100</p>
+                                      <p>Use :  Home, Office, Hotel</p>
+                                      <P>Pattern : Horizontal, Vertical</P>
+                                      <p>Material : Plastic</p>
+                                     
+                                      <p>Feature : Waterproof, Eco Friendly</p>
+                                      <p>Type : Other</p>
+                                    
+                                  </div>
+                                  <button class="send" id="openFormBtn" onclick="wind3()" type="button" class="btn btn-primary"
+                                          data-toggle="modal" data-target="#contactModal">Send Enquiry
+                                      </button>
+                                </div>
+                                  <div class="text-center">
+  
+                                      
+                                  </div>
+                              </div>
+
+                              <div class="col-lg-3 my-5">
+                                <div class="card">
+                                  <a href="exterior.html"><img src="assets/images/window/4.webp" alt=""></a>
+                                  <p><b>Skylight Exterior Blinds</b></p>
+                                  <div class="card-body text-left">
+                                      <p>Price: <span>800-12500 INR/Square Feet</span></p>
+                                      <p>Minimum Order Quantity : 100</p>
+                                      <p>Use :  Home, Office, Hotel</p>
+                                      <P>Pattern : Horizontal, Vertical</P>
+                                      <p>Material : Fabric</p>
+                                      <p>Color : White</p>
+                                      <p>Feature : Waterproof, Eco Friendly</p>
+                                      <p>Type : Vertical</p>
+                                  </div>
+                                  <button class="send" id="openFormBtn" onclick="wind4()" type="button" class="btn btn-primary"
+                                          data-toggle="modal" data-target="#contactModal">Send Enquiry
+                                      </button>
+                                </div>
+                                  <div class="text-center">
+  
+                                      
+                                  </div>
+                              </div>
+  
+
+                              <div class="col-lg-3 my-5">
+                                <div class="card">
+                                  <a href="zipline.html"><img src="assets/images/window/6.webp" alt=""></a>
+                                  <p><b>Infinity Zipline</b></p>
+                                  <div class="card-body text-left">
+                                    <p>Price Range: <span>1000.00 - 2000.00 INR/Square Feet</span></p>
+                                    <p>Minimum Order Quantity : 100</p>
+                                    <p>Use :  Home, Office, Hotel</p>
+                                    <P>Pattern : Horizontal</P>
+                                  
+                                    <p>Feature : Waterproof, Eco Friendly</p>
+                                    <p>Color : Gray & Silver</p>
+                                      
+                                     
+                                  </div>
+                                  <button class="send" id="openFormBtn" onclick="wind6()" type="button" class="btn btn-primary"
+                                          data-toggle="modal" data-target="#contactModal">Send Enquiry
+                                      </button>
+                                </div>
+                                  <div class="text-center">
+  
+                                      
+                                  </div>
+                              </div>
+
+
+                              <div class="col-lg-3 my-5">
+                                <div class="card">
+                                  <a href="dgu.html"><img src="assets/images/gallery/1.webp" alt=""></a>
+                                  <p><b>DGU Blinds</b></p>
+                                  <div class="card-body text-left">
+                                    <p>Price Range: <span>1000 INR/Square Feet</span></p>
+                                    <p>Minimum Order Quantity : 100</p>
+                                    <p>Use :  Home, Office, Hotel</p>
+                                    <p>Feature : Waterproof, Eco Friendly</p>
+                                    <P>Material : Plastic</P>
+                                  <p>Type : Venetian blinds</p>
+                                    <p>Color : White</p>
+                                      
+                                     
+                                  </div>
+                                  <button class="send" id="openFormBtn" onclick="wind1()" type="button" class="btn btn-primary"
+                                          data-toggle="modal" data-target="#contactModal">Send Enquiry
+                                      </button>
+                                </div>
+                                  <div class="text-center">
+  
+                                      
+                                  </div>
+                              </div>
+
+                             
+                        </div>
+                     </div>
+                   
+
+                </div>
+            </div>
+        </section>
+        <!-- contact-style-two end -->
+
+
+
+
+        <!-- main-footer -->
+        <footer class="main-footer style-two" style="background-image: url(assets/images/background/footer-1.jpg);">
+            <div class="footer-top">
+                <div class="auto-container">
+                    <div class="widget-section">
+                        <div class="row clearfix">
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="footer-widget logo-widget">
+                                    <div class="footer-logo">
+                                        <img src="assets/images/banner/logo.png" alt="" width="110px" class="">
+                                    </div>
+                                    <div class="text">
+                                        <p>We are leading manufacturer and supplier of Window Honeycomb Blind, Skylight Blind, Insect Net, Door Insect Screens, and Curtain Track.</p>
+                                    </div>
+                                    <ul class="footer-social clearfix">
+                                        <li><a href="https://www.facebook.com/share/KQd5VMQxR9rfGtko/?mibextid=qi2Omg"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/sv_design_s_decore_studio?igsh=MTEwcjBhY3FhY3c4OQ=="><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://wa.me/8178720842"><i class="fab fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="footer-widget links-widget ml-100">
+                                    <div class="widget-title">
+                                        <h3>Quick Links</h3>
+                                        <div class="shape"></div>
+                                    </div>
+                                    <div class="widget-content">
+                                        <ul class="links clearfix">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="mosquito.html">Our Products</a></li>
+                                            <li><a href="contact.html">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="footer-widget links-widget ml-70">
+                                    <div class="widget-title">
+                                        <h3>Blinds</h3>
+                                        <div class="shape"></div>
+                                    </div>
+                                    <div class="widget-content">
+                                        <ul class="links clearfix">
+                                            <ul>
+                                                <li><a href="mosquito.html">Insect Mesh</a></li>
+                                                <li><a href="window.html">Window Blinds</a></li>
+                                                <li><a href="upvc.html">uPVC Door & Windows</a></li>
+                                                <li><a href="partition.html">Partition Door</a></li>
+                                                
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="footer-widget links-widget ml-70">
+                                    <div class="widget-title">
+                                        <h3>Location</h3>
+                                        <div class="shape"></div>
+                                    </div>
+                                    <div class="widget-content">
+                                        <ul class="links clearfix">
+                                            <ul>
+                                                <li><a href="#"><span><i class="fas fa-map-marker-alt"></i></span> 558 Bakshi Farm Gitorni Silver Oak Lane New Delhi 110030</a></li>
+                                                <li><a href="tel:+918178720842"> <span><i class="fas fa-phone-volume"></i></span> +91 8178720842</a></li>
+                                                <li><a href="tel:+919315687388"> <span><i class="fas fa-phone-volume"></i></span> +91 9315687388</a></li>
+                                                <li><a href="mailto: info@svdesigndecor.com"><span><i class="fas fa-envelope-open"></i></span>  info@svdesigndecor.com</a></li>
+                                               
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="copyright centred">
+                        <p>(&copy;) 2024. All rights reserved. <a href="https://www.svdesigndecor.com">SV Design & Decor Studio</a>&nbsp;&nbsp;Developed By <a href="https://www.crystalwebtechnologies.com/" target="_blank">Crystal Web Technologies</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- main-footer end -->
+
+
+        <!--Scroll to top-->
+        <button class="scroll-top scroll-to-target" data-target="html">
+             <span ><i class="fa-solid fa-up-long"></i></span>
+        </button>
+    </div>
+
+    <script>
+
+function wind1() {
+            document.getElementById('nameInput').value = 'DGU BLINDS';
+        }
+        
+     
+        function wind3() {
+            document.getElementById('nameInput').value = 'SKYLIGHT BLINDS';
+        }
+        function wind4() {
+            document.getElementById('nameInput').value = 'SKYLIGHT EXTERIOR BLINDS';
+        }
+        function wind5() {
+            document.getElementById('nameInput').value = 'ZIPLINE MOTORIZED BLINDS';
+        }
+        function wind6() {
+            document.getElementById('nameInput').value = 'INFINITY ZIPLINE';
+        }
+    </script>
+
+  
+
+    <!-- jequery plugins -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/scrollbar.js"></script>
+    <script src="assets/js/bxslider.js"></script>
+
+
+    <script src="assets/js/captcha.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+
+    <!-- main-js -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body><!-- End of .page_wrapper -->
+
+
+
+</html>
